@@ -1,0 +1,144 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Card */
+.pokemon-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Image Styling */
+.pokemon-card figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* fixed height for uniform cards */
+}
+
+.pokemon-card img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Optional: Add Pokémon Name below image later */
+.pokemon-card .name {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+
+.search-box {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  width: 250px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #0073e6;
+}
+/* Pokemon Card Styling */
+.pokemon-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.pokemon-card figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.pokemon-card img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Pokemon Name */
+.pokemon-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222;
+  text-transform: capitalize;
+}
+
+/* Types Badge */
+.types {
+  margin: 10px 0;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  background: #4caf50;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+/* Pokemon Info */
+.pokemon-info {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: left;
+}
+
+.pokemon-info p {
+  margin: 5px 0;
+}
+ 
